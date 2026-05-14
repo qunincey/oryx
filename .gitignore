@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build and packaging artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Test and coverage output
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local runtime state
+artifacts/
+registry/tasks.json
+.openclaw-state/
+*.db
+*.sqlite
+*.sqlite3
+
+# Local editor / agent config
+.claude/
+.superpowers/
+.vscode/
+.idea/
+
+# OS files
+.DS_Store

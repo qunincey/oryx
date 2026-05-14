@@ -1,0 +1,41 @@
+{
+  "approved_status": "approved",
+  "source_repo": "product-brain",
+  "specs_dir": "docs/prd",
+  "runtime_dir": ".openclaw-state",
+  "issue_template": ".openclaw/prompts/implementation-issue.md.tmpl",
+  "worker_template": ".openclaw/prompts/worker-task.txt.tmpl",
+  "default_labels": [
+    "ai-task",
+    "generated-by-openclaw",
+    "ready-for-worker"
+  ],
+  "worker_type": "codex",
+  "worker_model": "default",
+  "notifications": {
+    "webhook_url": "",
+    "events": [
+      "completed",
+      "blocked",
+      "restartable",
+      "restarted"
+    ],
+    "timeout_seconds": 5,
+    "headers": {},
+    "bearer_token_env": ""
+  },
+  "repo_mappings": {
+    "repo-a": {
+      "github_repo": "org/repo-a",
+      "labels": [
+        "backend"
+      ]
+    },
+    "repo-b": {
+      "github_repo": "org/repo-b",
+      "labels": [
+        "frontend"
+      ]
+    }
+  }
+}

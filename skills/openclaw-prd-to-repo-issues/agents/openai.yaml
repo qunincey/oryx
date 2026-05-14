@@ -1,0 +1,4 @@
+interface:
+  display_name: "PRD Issue Dispatch"
+  short_description: "Create live repo issues from a PRD"
+  default_prompt: "Use $openclaw-prd-to-repo-issues to turn this approved PRD into repo-specific online issues and publish them through the OpenClaw bridge. Only use dry-run or artifact-only output if I explicitly ask for preview or if credentials/mappings are blocked."

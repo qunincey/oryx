@@ -1,0 +1,4 @@
+interface:
+  display_name: "OpenClaw Bootstrap"
+  short_description: "Bootstrap docs repo from code or discussion"
+  default_prompt: "Use $openclaw-project-bootstrap to bootstrap this docs repo from existing codebases or a greenfield discussion."

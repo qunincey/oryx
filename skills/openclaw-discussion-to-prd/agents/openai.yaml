@@ -1,0 +1,4 @@
+interface:
+  display_name: "Discussion To PRD"
+  short_description: "Turn mature discussion into draft PRD"
+  default_prompt: "Use $openclaw-discussion-to-prd to summarize the current requirement discussion, analyze impacted modules, and draft a proposed PRD."

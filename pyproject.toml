@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openclaw-mvp1-bridge"
+version = "0.1.0"
+description = "Lightweight OpenClaw integration bridge for MVP-1 task ingestion."
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+openclaw-mvp1 = "openclaw_bridge.cli:main"
+
+[tool.setuptools]
+packages = ["openclaw_bridge", "orx"]

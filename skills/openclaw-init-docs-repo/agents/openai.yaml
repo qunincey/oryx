@@ -1,0 +1,4 @@
+interface:
+  display_name: "Init Docs Repo"
+  short_description: "Ask for required fields and scaffold a docs repo"
+  default_prompt: "Use $openclaw-init-docs-repo to initialize a new OpenClaw docs repo. Ask for missing required fields through a short Q&A, confirm the plan, then run the init CLI yourself."
