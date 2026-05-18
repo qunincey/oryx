@@ -3,13 +3,14 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "openclaw-mvp1-bridge"
+name = "oryx"
 version = "0.1.0"
-description = "Lightweight OpenClaw integration bridge for MVP-1 task ingestion."
+description = "Local orchestration runtime for AI coding workers."
 requires-python = ">=3.11"
 dependencies = []
 
 [project.scripts]
+oryx = "openclaw_bridge.cli:main"
 openclaw-mvp1 = "openclaw_bridge.cli:main"
 
 [tool.setuptools]

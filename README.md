@@ -1,6 +1,7 @@
-# OpenClaw Docs Skill And Bridge
+# Oryx
 
-This repository now packages the MVP-1 flow as two things:
+Oryx is a local orchestration runtime for AI coding workers. It packages the
+current OpenClaw-style MVP flow as two things:
 
 - a lightweight bridge CLI for docs repo initialization and approved-spec dispatch
 - reusable local skills at `skills/openclaw-init-docs-repo/`,
@@ -37,7 +38,7 @@ Initialize a docs repo with the skill-first path:
 Command fallback when you need a direct CLI path:
 
 ```bash
-python3 -m openclaw_bridge.cli init-docs-repo \
+oryx init-docs-repo \
   --target-dir /absolute/path/to/docs-repo \
   --project-name "Example Project" \
   --project-description "Short summary of what this project does"
@@ -55,14 +56,14 @@ Restart Codex and Claude Code after init so the new global assets are loaded.
 Dispatch one approved spec into registry and prompt artifacts:
 
 ```bash
-python3 -m openclaw_bridge.cli dispatch-approved \
+oryx dispatch-approved \
   --docs-repo /absolute/path/to/docs-repo/docs/prd/feature-a.md
 ```
 
 Dispatch all approved specs in one PRD subdirectory and open mapped GitHub or GitLab issues:
 
 ```bash
-python3 -m openclaw_bridge.cli dispatch-approved \
+oryx dispatch-approved \
   --docs-repo /absolute/path/to/docs-repo/docs/prd/batch-db \
   --create-issues
 ```

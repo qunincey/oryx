@@ -22,6 +22,12 @@ python -m unittest tests.test_cli
 python -m unittest tests.test_scaffold
 
 # Use the CLI directly (after pip install -e .)
+oryx init-docs-repo --target-dir /path/to/docs-repo --project-name "..." --project-description "..."
+oryx dispatch-approved --docs-repo /path/to/docs-repo/docs/prd/feature.md
+oryx dispatch-approved --docs-repo /path/to/docs-repo/docs/prd/batch/ --create-issues
+oryx dispatch-approved --docs-repo /path/to/docs-repo/docs/prd/batch/ --create-issues --dry-run
+
+# Backward-compatible legacy CLI name
 openclaw-mvp1 init-docs-repo --target-dir /path/to/docs-repo --project-name "..." --project-description "..."
 openclaw-mvp1 dispatch-approved --docs-repo /path/to/docs-repo/docs/prd/feature.md
 openclaw-mvp1 dispatch-approved --docs-repo /path/to/docs-repo/docs/prd/batch/ --create-issues
@@ -35,7 +41,7 @@ No linter or type-checker is configured in `pyproject.toml`. No external runtime
 
 ## Architecture
 
-This bridge has two roles:
+Oryx currently has two roles:
 
 **1. Docs-repo scaffolding** (`init-docs-repo`): Initializes a separate "docs repo" (a plain directory, not this repo) with OpenClaw contracts — AGENTS.md, config, prompt templates, skill files, and Claude/Codex agent installs. The docs repo is where requirement documents live. Skills and agents are installed both repo-locally (`.codex/skills/`, `.claude/agents/`) and globally (`CODEX_HOME/skills` or `~/.codex/skills`, `CLAUDE_HOME/agents` or `~/.claude/agents`).
 

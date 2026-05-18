@@ -39,7 +39,7 @@ _WATCHABLE_STATES = {"dispatched", "in_progress", "restartable", "exited", "bloc
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="OpenClaw MVP-1 integration bridge.")
+    parser = argparse.ArgumentParser(description="Oryx local orchestration bridge.")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     init_parser = subparsers.add_parser(
