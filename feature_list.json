@@ -10,11 +10,11 @@
     },
     {
       "id": "feat-002",
-      "name": "Next Requested Change",
-      "description": "Replace this entry with the next concrete user-requested behavior before implementation starts.",
+      "name": "Project Purpose Documentation",
+      "description": "Document Oryx's purpose in AGENTS.md: initializing docs projects, splitting requirements into repo-specific work, and supporting OpenClaw-style agent workflow orchestration from the original idea notes.",
       "dependencies": ["feat-001"],
-      "status": "not-started",
-      "evidence": ""
+      "status": "done",
+      "evidence": "2026-05-26: ./init.sh passed; ran pip install -e ., python -m unittest discover -s tests (80 tests), and python -m compileall openclaw_bridge orx."
     }
   ]
 }

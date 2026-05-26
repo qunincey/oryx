@@ -13,6 +13,7 @@
 - [x] Added standard verification entrypoint.
 - [x] Updated `AGENTS.md` with startup, scope, and done rules.
 - [x] Ran full standard verification.
+- [x] Added Oryx project purpose and original OpenClaw orchestration idea summary to `AGENTS.md`.
 
 ### What's In Progress
 
@@ -20,8 +21,8 @@
 
 ### What's Next
 
-1. Replace `feat-002` in `feature_list.json` with the next requested project change.
-2. Keep verification evidence here when a tracked feature changes state.
+1. Keep verification evidence here when a tracked feature changes state.
+2. Leave future implementation details out of `AGENTS.md` unless they affect agent behavior.
 
 ## Blockers / Risks
 
@@ -38,10 +39,17 @@
 - `progress.md` - Added restartable session state.
 - `session-handoff.md` - Added handoff template.
 - `init.sh` - Added standard verification command.
+- `AGENTS.md` - Added project purpose and original OpenClaw orchestration idea summary.
+- `feature_list.json` - Tracked the project purpose documentation update.
+- `progress.md` - Recorded the documentation update and pending verification.
 
 ## Evidence of Completion
 
 - [x] Standard check: `./init.sh` passed on 2026-05-26.
+  - `pip install -e .`
+  - `python -m unittest discover -s tests` passed: 80 tests.
+  - `python -m compileall openclaw_bridge orx`
+- [x] Project purpose documentation check: `./init.sh` passed on 2026-05-26.
   - `pip install -e .`
   - `python -m unittest discover -s tests` passed: 80 tests.
   - `python -m compileall openclaw_bridge orx`
