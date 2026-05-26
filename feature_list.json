@@ -1,0 +1,20 @@
+{
+  "features": [
+    {
+      "id": "feat-001",
+      "name": "Minimal Agent Harness",
+      "description": "Keep startup instructions, feature state, progress notes, handoff notes, and verification commands available for coding agents.",
+      "dependencies": [],
+      "status": "done",
+      "evidence": "2026-05-26: ./init.sh passed; ran pip install -e ., python -m unittest discover -s tests (80 tests), and python -m compileall openclaw_bridge orx."
+    },
+    {
+      "id": "feat-002",
+      "name": "Next Requested Change",
+      "description": "Replace this entry with the next concrete user-requested behavior before implementation starts.",
+      "dependencies": ["feat-001"],
+      "status": "not-started",
+      "evidence": ""
+    }
+  ]
+}

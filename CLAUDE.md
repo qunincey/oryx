@@ -9,13 +9,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 pip install -e .
 
 # Run all tests
-python -m pytest tests/
+python -m unittest discover -s tests
 
 # Run a single test file
-python -m pytest tests/test_cli.py
+python -m unittest tests.test_cli
 
 # Run a single test case
-python -m pytest tests/test_cli.py::DispatchSpecsTests::test_dispatch_specs_accepts_single_spec_file_path
+python -m unittest tests.test_cli.DispatchSpecsTests.test_dispatch_specs_accepts_single_spec_file_path
 
 # Run via unittest directly
 python -m unittest tests.test_cli
